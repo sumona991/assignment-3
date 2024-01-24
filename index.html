@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind CSS cdn   ============================= -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind script -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>Assignment-3</title>
+</head>
+
+<body>
+    <!-- Navbar start================================================ -->
+    <div class="navbar bg-base-100 w-full md:w-10/12 mx-auto mt-5 px-0">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a class=" text-red-600 font-semibold">Home</a></li>
+                    <li><a class=" text-gray-700">About</a></li>
+                    <li><a class=" text-gray-700">Page</a></li>
+                    <li><a class=" text-gray-700">Blog</a></li>
+                    <li><a class=" text-gray-700">Contact</a></li>
+                </ul>
+            </div>
+            <a class=" text-4xl font-bold">Hockey<span class=" text-red-600">’</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a class=" text-red-600 font-semibold">Home</a></li>
+                <li><a class=" text-gray-700">About</a></li>
+                <li><a class=" text-gray-700">Page</a></li>
+                <li><a class=" text-gray-700">Blog</a></li>
+                <li><a class=" text-gray-700">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <i class="fa-solid fa-magnifying-glass text-gray-500 text-xl me-5"></i>
+            <a class="btn bg-red-600 text-white ">Get Ticket</a>
+        </div>
+    </div>
+    <!-- Navbar End ================================================= -->
+
+
+    <!-- Hero section  start================================ -->
+    <div class="w-full md:w-10/12 mx-auto mt-14">
+        <!-- Carosula -->
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="Rectangle 1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="Rectangle 1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="Rectangle 1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="Rectangle 1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+        <!-- Carosula -->
+    </div>
+    <!-- Hero section  end================================ -->
+
+
+
+    <!-- Professional Hokeys club start =========================-->
+    <div
+        class="w-full md:w-10/12 mx-auto mt-20 flex flex-col justify-between items-center border border-dashed py-16 border-r-slate-50 border-l-slate-50">
+        <h1 class=" text-center text-4xl font-bold mb-7">Professional Hockeys Club</h1>
+        <article class=" text-center w-3/6 text-gray-500">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
+            nullam proin.
+        </article>
+    </div>
+    <!-- Professional Hokeys club end =========================-->
+
+
+
+    <!-- Percentage section start ===============================-->
+    <div class=" grid grid-rows-4 grid-cols-1 md:grid-rows-1 md:grid-cols-4  mt-20 w-full md:w-10/12 mx-auto gap-5">
+        <div>
+            <div class=" relative  w-full flex justify-center items-center mb-8">
+                <img src="Group 9.png" alt="">
+                <h1 class=" absolute font-bold text-3xl">87%</h1>
+            </div>
+            <h1 class=" text-center font-semibold text-lg mb-2">Prayer Facility</h1>
+            <article class=" text-center text-gray-500 text-sm">
+                Amet consectetur. Condimentum dignissim adipiscing .
+            </article>
+        </div>
+
+        <div>
+            <div class="relative w-full flex justify-center items-center mb-8">
+                <img src="Ellipse 2.png" alt="">
+                <h1 class=" absolute font-bold text-3xl">95%</h1>
+            </div>
+            <h1 class=" text-center font-semibold text-lg mb-2">Experienced Coach</h1>
+            <article class=" text-center text-gray-500 text-sm">
+                Amet consectetur. Condimentum dignissim adipiscing .
+            </article>
+        </div>
+
+        <div>
+            <div class="relative w-full flex justify-center items-center mb-8">
+                <img src="Ellipse 2 (1).png" alt="">
+                <h1 class=" absolute font-bold text-3xl">90%</h1>
+            </div>
+            <h1 class=" text-center font-semibold text-lg mb-2">Senior Player</h1>
+            <article class=" text-center text-gray-500 text-sm">
+                Amet consectetur. Condimentum dignissim adipiscing .
+            </article>
+        </div>
+
+        <div>
+            <div class="relative w-full flex justify-center items-center mb-8">
+                <img src="Group 9 (1).png" alt="">
+                <h1 class=" absolute font-bold text-3xl">80%</h1>
+            </div>
+            <h1 class=" text-center font-semibold text-lg mb-2">Training Ground</h1>
+            <article class=" text-center text-gray-500 text-sm">
+                Amet consectetur. Condimentum dignissim adipiscing .
+            </article>
+        </div>
+    </div>
+    <!-- Percentage section end ===============================-->
+
+
+
+    <!-- Program section start =========================-->
+    <div
+        class="w-full md:w-10/12 mx-auto mt-20 flex flex-col justify-between items-center border border-dashed py-16 border-r-slate-50 border-l-slate-50">
+        <h1 class=" text-center text-4xl font-bold mb-7">Professional Hockeys Club</h1>
+        <article class=" text-center w-3/6 text-gray-500">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
+            nullam proin.
+        </article>
+    </div>
+    <!-- Program section end =========================-->
+
+
+
+    <!-- Junior program and teenager program start---------------------- -->
+    <div class="w-full md:w-10/12 mx-auto grid grid-rows-2 grid-cols-1 md:grid-rows-1 md:grid-cols-2 gap-5 mt-20">
+        <!-- left section -->
+        <div class=" relative rounded-xl h-80 bg-black flex justify-start items-end">
+            <!-- bg-image -->
+            <img src="Rectangle 4.png" class=" absolute w-full h-full z-0 brightness-50" alt="">
+
+            <!-- text and heading  -->
+            <div class=" z-10 relative ps-10 pb-10">
+                <h1 class=" text-white font-semibold text-4xl mb-5">Junior Program</h1>
+                <article class=" text-white text-sm w-3/4 mb-5">
+                    Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                    enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et
+                    in.</article>
+                <button class=" text-white bg-red-600 px-7 py-3 rounded-md font-semibold text-sm">Register Now</button>
+            </div>
+        </div>
+
+        <!-- right section -->
+        <div class=" relative rounded-xl h-80 bg-black flex justify-start items-end">
+            <!-- bg-image -->
+            <img src="Rectangle 11.png" class=" absolute w-full h-full z-0 brightness-50" alt="">
+
+            <!-- text and heading  -->
+            <div class=" z-10 relative ps-10 pb-10">
+                <h1 class=" text-white font-semibold text-4xl mb-5">Teenager Program</h1>
+                <article class=" text-white text-sm w-3/4 mb-5">
+                    Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                    enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et
+                    in.</article>
+                <button class=" text-white bg-red-600 px-7 py-3 rounded-md font-semibold text-sm">Register Now</button>
+            </div>
+        </div>
+    </div>
+    <!-- Junior program and teenager program end---------------------- -->
+
+
+    <!-- Professional Program start======================================= -->
+
+    <div class="w-full md:w-10/12 mx-auto mt-5 relative rounded-xl h-72 md:h-96 bg-black flex justify-start items-end">
+        <!-- bg-image -->
+        <img src="Rectangle 12.png" class=" absolute w-full h-full z-0 brightness-50" alt="">
+
+        <!-- text and heading  -->
+        <div class=" z-10 relative ps-10 pb-10">
+            <h1 class=" text-white font-semibold text-4xl mb-5">Teenager Program</h1>
+            <article class=" text-white text-sm w-11/12  md:w-5/12 mb-5">
+                Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et
+                in.</article>
+            <button class=" text-white bg-red-600 px-7 py-3 rounded-md font-semibold text-sm">Register Now</button>
+        </div>
+    </div>
+    <!-- Professional program end========================================= -->
+
+
+
+
+
+    <!-- Our New Product start ================================================-->
+    <div
+        class="w-full md:w-10/12 mx-auto mt-20 flex flex-col justify-between items-center border border-dashed py-16 border-r-slate-50 border-l-slate-50">
+        <h1 class=" text-center text-4xl font-bold mb-7">Our New Products</h1>
+        <article class=" text-center w-3/6 text-gray-500">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
+            nullam proin.
+        </article>
+    </div>
+    <!-- Our New Product end =====================================================-->
+
+
+
+    <!-- Product Grid start ======================================================== -->
+    <div class=" w-full md:w-10/12 mx-auto grid gap-4 grid-rows-6 grid-cols-1 md:grid-rows-3 md:grid-cols-2 mt-20">
+
+        <div class=" h-auto md:h-52 rounded-xl border border-gray-200 flex flex-col md:flex-row justify-between items-center p-5">
+            <!-- left image -->
+            <img src="Rectangle 4 (1).png" class=" w-full mb-7 md:mb-0 md:w-4/12 h-full" alt="">
+
+            <!-- text and header -->
+            <div class=" ms-0 md:ms-5">
+                <div class=" flex justify-start items-center mb-4">
+                    <img src="Frame (1).png" class=" me-1 w-5" alt="">
+                    <span class=" text-gray-400">
+                        5.0
+                    </span>
+
+
+                    <img src="Frame (2).png" class=" ms-4 me-1 w-5" alt="">
+                    <span class=" text-gray-400">
+                        20
+                    </span>
+
+
+                    <img src="Frame (3).png" class=" ms-4 me-1 w-5" alt="">
+                    <span class=" text-gray-400">
+                        200
+                    </span>
+                </div>
+
+                <h1 class=" font-bold text-lg mb-3">World Cup Flags Football</h1>
+                <article class=" text-gray-500">Dolor sit amet consectetur. Ut urna diam quis sagittis. </article>
+
+                <div class=" flex justify-between items-center mt-3">
+                    <span class=" text-red-500 font-semibold">
+                        Price - $22.00
+                    </span>
+
+                    <span class=" text-gray-500 flex justify-end items-center">
+                        <img src="Frame.png" class=" me-2" alt="">
+                        Delivery Fee : Free
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="h-auto md:h-52 rounded-xl border border-gray-200 flex flex-col md:flex-row justify-between items-center p-5">
+            <!-- left image -->
+            <img src="Rectangle 4 (2).png" class="w-full mb-7 md:mb-0 md:w-4/12 h-full" alt="">
+
+            <!-- text and header -->
+            <div class="ms-0 md:ms-5">
+                <div class=" flex justify-start items-center mb-4">
+                    <img src="Frame (1).png" class=" me-1 w-5" alt="">
+                    <span class=" text-gray-400">
+                        5.0
+                    </span>
+
+
+                    <img src="Frame (2).png" class=" ms-4 me-1 w-5" alt="">
+                    <span class=" text-gray-400">
+                        20
+                    </span>
+
+
+                    <img src="Frame (3).png" class=" ms-4 me-1 w-5" alt="">
+                    <span class=" text-gray-400">
+                        200
+                    </span>
+                </div>
+
+                <h1 class=" font-bold text-lg mb-3">World Cup Flags Football</h1>
+                <article class=" text-gray-500">Dolor sit amet consectetur. Ut urna diam quis sagittis. </article>
+
+                <div class=" flex justify-between items-center mt-3">
+                    <span class=" text-red-500 font-semibold">
+                        Price - $22.00
+                    </span>
+
+                    <span class=" text-gray-500 flex justify-end items-center">
+                        <img src="Frame.png" class=" me-2" alt="">
+                        Delivery Fee : Free
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class=" h-auto md:h-52 rounded-xl border border-gray-200 flex flex-col md:flex-row justify-between items-center p-5">
+            <!-- left image -->
+            <img src="Rectangle 4 (3).png" class="w-full mb-7 md:mb-0 md:w-4/12 h-full" alt="">
+
+            <!-- text and header -->
+            <div class="ms-0 md:ms-5">
+                <div class=" flex justify-start items-center mb-4">
+                    <img src="Frame (1).png" class=" me-1 w-5" alt="">
+                    <span class=" text-gray-400">
+                        5.0
+                    </span>
+
+
+                    <img src="Frame (2).png" class=" ms-4 me-1 w-5" alt="">
+                    <span class=" text-gray-400">
+                        20
+                    </span>
+
+
+                    <img src="Frame (3).png" class=" ms-4 me-1 w-5" alt="">
+                    <span class=" text-gray-400">
+                        200
+                    </span>
+                </div>
+
+                <h1 class=" font-bold text-lg mb-3">World Cup Flags Football</h1>
+                <article class=" text-gray-500">Dolor sit amet consectetur. Ut urna diam quis sagittis. </article>
+
+                <div class=" flex justify-between items-center mt-3">
+                    <span class=" text-red-500 font-semibold">
+                        Price - $22.00
+                    </span>
+
+                    <span class=" text-gray-500 flex justify-end items-center">
+                        <img src="Frame.png" class=" me-2" alt="">
+                        Delivery Fee : Free
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="h-auto md:h-52 rounded-xl border border-gray-200 flex flex-col md:flex-row justify-between items-center p-5">
+            <!-- left image -->
+            <img src="Rectangle 4 (4).png" class="w-full mb-7 md:mb-0 md:w-4/12 h-full" alt="">
+
+            <!-- text and header -->
+            <div class="ms-0 md:ms-5">
+                <div class=" flex justify-start items-center mb-4">
+                    <img src="Frame (1).png" class=" me-1 w-5" alt="">
+                    <span class=" text-gray-400">
+                        5.0
+                    </span>
+
+
+                    <img src="Frame (2).png" class=" ms-4 me-1 w-5" alt="">
+                    <span class=" text-gray-400">
+                        20
+                    </span>
+
+
+                    <img src="Frame (3).png" class=" ms-4 me-1 w-5" alt="">
+                    <span class=" text-gray-400">
+                        200
+                    </span>
+                </div>
+
+                <h1 class=" font-bold text-lg mb-3">World Cup Flags Football</h1>
+                <article class=" text-gray-500">Dolor sit amet consectetur. Ut urna diam quis sagittis. </article>
+
+                <div class=" flex justify-between items-center mt-3">
+                    <span class=" text-red-500 font-semibold">
+                        Price - $22.00
+                    </span>
+
+                    <span class=" text-gray-500 flex justify-end items-center">
+                        <img src="Frame.png" class=" me-2" alt="">
+                        Delivery Fee : Free
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="h-auto md:h-52 rounded-xl border border-gray-200 flex flex-col md:flex-row justify-between items-center p-5">
+            <!-- left image -->
+            <img src="Rectangle 4 (5).png" class="w-full mb-7 md:mb-0 md:w-4/12 h-full" alt="">
+
+            <!-- text and header -->
+            <div class="ms-0 md:ms-5">
+                <div class=" flex justify-start items-center mb-4">
+                    <img src="Frame (1).png" class=" me-1 w-5" alt="">
+                    <span class=" text-gray-400">
+                        5.0
+                    </span>
+
+
+                    <img src="Frame (2).png" class=" ms-4 me-1 w-5" alt="">
+                    <span class=" text-gray-400">
+                        20
+                    </span>
+
+
+                    <img src="Frame (3).png" class=" ms-4 me-1 w-5" alt="">
+                    <span class=" text-gray-400">
+                        200
+                    </span>
+                </div>
+
+                <h1 class=" font-bold text-lg mb-3">World Cup Flags Football</h1>
+                <article class=" text-gray-500">Dolor sit amet consectetur. Ut urna diam quis sagittis. </article>
+
+                <div class=" flex justify-between items-center mt-3">
+                    <span class=" text-red-500 font-semibold">
+                        Price - $22.00
+                    </span>
+
+                    <span class=" text-gray-500 flex justify-end items-center">
+                        <img src="Frame.png" class=" me-2" alt="">
+                        Delivery Fee : Free
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class=" h-auto md:h-52 rounded-xl border border-gray-200 flex flex-col md:flex-row justify-between items-center p-5">
+            <!-- left image -->
+            <img src="Rectangle 4 (6).png" class="w-full mb-7 md:mb-0 md:w-4/12 h-full" alt="">
+
+            <!-- text and header -->
+            <div class="ms-0 md:ms-5">
+                <div class=" flex justify-start items-center mb-4">
+                    <img src="Frame (1).png" class=" me-1 w-5" alt="">
+                    <span class=" text-gray-400">
+                        5.0
+                    </span>
+
+
+                    <img src="Frame (2).png" class=" ms-4 me-1 w-5" alt="">
+                    <span class=" text-gray-400">
+                        20
+                    </span>
+
+
+                    <img src="Frame (3).png" class=" ms-4 me-1 w-5" alt="">
+                    <span class=" text-gray-400">
+                        200
+                    </span>
+                </div>
+
+                <h1 class=" font-bold text-lg mb-3">World Cup Flags Football</h1>
+                <article class=" text-gray-500">Dolor sit amet consectetur. Ut urna diam quis sagittis. </article>
+
+                <div class=" flex justify-between items-center mt-3">
+                    <span class=" text-red-500 font-semibold">
+                        Price - $22.00
+                    </span>
+
+                    <span class=" text-gray-500 flex justify-end items-center">
+                        <img src="Frame.png" class=" me-2" alt="">
+                        Delivery Fee : Free
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Product Grid end   ======================================================== -->
+
+
+
+
+    <!-- Our New Product start ================================================-->
+    <div
+        class="w-full md:w-10/12 mx-auto mt-20 flex flex-col justify-between items-center border border-dashed py-16 border-r-slate-50 border-l-slate-50">
+        <h1 class=" text-center text-4xl font-bold mb-7">Clients Question</h1>
+        <article class=" text-center w-3/6 text-gray-500">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
+            nullam proin.
+        </article>
+    </div>
+    <!-- Our New Product end =====================================================-->
+
+
+
+
+    <!-- accordian ==================================================== -->
+    <div class=" w-full md:w-10/12 mx-auto flex flex-col md:flex-row justify-center items-center mt-20">
+        <div class=" w-full md:w-5/12">
+            <img class=" w-full" src="Rectangle 4 (7).png" alt="">
+        </div>
+
+        <div class=" w-full md:w-6/12 ms-7">
+            <h1 class=" font-bold text-xl mb-3">Our Equipment</h1>
+            <article class=" text-gray-500 mb-6">
+                Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.
+            </article>
+
+            <div class="collapse collapse-arrow border  mb-2">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">
+                    Hockey Training
+                </div>
+                <div class="collapse-content">
+                    <p>hello</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow border mb-2">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">
+                    Private Lessons
+                </div>
+                <div class="collapse-content">
+                    <p>hello</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow border mb-2">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">
+                    Ski Touring
+                </div>
+                <div class="collapse-content">
+                    <p>hello</p>
+                </div>
+            </div>
+
+            <div class="collapse collapse-arrow border mb-2">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">
+                    Booking
+                </div>
+                <div class="collapse-content">
+                    <p>hello</p>
+                </div>
+            </div>
+
+
+
+            <div class="collapse collapse-arrow border mb-2">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">
+                    Pricings
+                </div>
+                <div class="collapse-content">
+                    <p>hello</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- accordian ==================================================== -->
+
+
+
+
+    <!-- Get in Touch start ================================================-->
+    <div
+        class="w-full md:w-10/12 mx-auto mt-20 flex flex-col justify-between items-center border border-dashed py-16 border-r-slate-50 border-l-slate-50">
+        <h1 class=" text-center text-4xl font-bold mb-7">Get In Touch</h1>
+        <article class=" text-center w-3/6 text-gray-500">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
+            nullam proin.
+        </article>
+    </div>
+    <!-- Get in Touch end =====================================================-->
+
+
+
+
+    <!-- Form section start ===================================================== -->
+    <div class="w-full md:w-10/12 mx-auto flex flex-col md:flex-row justify-between items-center mt-20">
+        <!-- Contact ============-->
+        <div class=" rounded-xl border w-full md:w-5/12 p-10 mb-4">
+            <div class=" p-8 rounded-xl border bg-green-50 mb-4">
+                <img src="Group 1171275317.png" class="w-10 mb-5" alt="">
+                <p class=" text-gray-400 text-sm mb-3">Phone Number : </p>
+                <h1 class=" font-bold mb-4">(+62) 123-321-543</h1>
+            </div>
+
+            <div class=" p-8 rounded-xl border bg-yellow-50 mb-4">
+                <img src="direct 1.png" class="w-10 mb-5" alt="">
+                <p class=" text-gray-400 text-sm mb-3">Email: </p>
+                <h1 class=" font-bold mb-4">(+62) 123-321-543</h1>
+            </div>
+
+            <div class=" p-8 rounded-xl border bg-blue-50">
+                <img src="Group 1171275321.png" class="w-10 mb-5" alt="">
+                <p class=" text-gray-400 text-sm mb-3">Location : </p>
+                <h1 class=" font-bold mb-4">(+62) 123-321-543</h1>
+            </div>
+        </div>
+
+        <!-- Form ===============----->
+        <div class=" w-full md:w-7/12 ms-8">
+            <div class=" w-full grid grid-rows-2 grid-cols-2 gap-4">
+                <div>
+                    <h1 class=" text-xl font-bold mb-4">Your Name</h1>
+                    <input type="text" class=" bg-gray-50 px-5 py-3 outline-none rounded-md w-full"
+                        placeholder="Enter your full name">
+                </div>
+
+                <div>
+                    <h1 class=" text-xl font-bold mb-4">Your Email</h1>
+                    <input type="text" class=" bg-gray-50 px-5 py-3 outline-none rounded-md w-full"
+                        placeholder="Enter your full name">
+                </div>
+
+                <div>
+                    <h1 class=" text-xl font-bold mb-4">Subject</h1>
+                    <input type="text" class=" bg-gray-50 px-5 py-3 rounded-md outline-none w-full"
+                        placeholder="Enter your full name">
+                </div>
+
+                <div>
+                    <h1 class=" text-xl font-bold mb-4">Phone Number</h1>
+                    <input type="text" class=" bg-gray-50 px-5 py-3 rounded-md outline-none w-full"
+                        placeholder="Enter your full name">
+                </div>
+            </div>
+
+            <div class=" mt-10">
+                <h1 class=" font-bold text-xl mb-3">
+                    Message
+                </h1>
+
+                <textarea placeholder="Write your message"
+                    class=" rounded-lg bg-gray-50 w-full h-80 p-5 outline-none"></textarea>
+
+                <button class=" bg-red-500 text-white w-full py-3 rounded-lg font-semibold mt-5">Send Message</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- Form section end   ===================================================== -->
+
+
+
+    <!-- Social Media ============================================================ -->
+    <div class="w-full md:w-10/12 rounded-xl mx-auto mt-20 p-8 bg-gray-50">
+        <h1 class=" text-center font-bold text-3xl mb-4">Social Media</h1>
+        <div class=" flex justify-between items-center w-full md:w-2/12 mx-auto">
+            <i class="fa-brands fa-twitter text-xl"></i>
+            <i class="fa-brands fa-facebook-f text-xl"></i>
+            <i class="fa-brands fa-instagram text-xl"></i>
+            <i class="fa-brands fa-github text-xl"></i>
+        </div>
+    </div>
+    <!-- Social Media ============================================================ -->
+
+
+
+    <!-- Footer start============================================================= -->
+    <footer class=" bg-black w-full h-auto mt-40 py-20">
+        <div class=" w-10/12 mx-auto flex flex-col md:flex-row justify-between items-center">
+
+            <div class=" w-full md:w-4/12 flex flex-col justify-between items-center md:items-start">
+                <h1 class=" text-white font-semibold text-2xl mb-5">Get In Touch</h1>
+                <p class=" text-gray-400 text-sm w-9/12 mb-3">
+                    Dit amet consectetur. Condimentum adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam
+                    proin.
+                </p>
+
+                <p class=" text-gray-400 text-sm mb-3 flex justify-start items-center">
+                   <img src="Frame (4).png" class=" me-3 w-6" alt="">
+                    hockeys@support.com
+                </p>
+
+                <p class="text-gray-400 text-sm flex justify-start items-center">
+                    <img src="Frame (5).png" class=" me-3 w-6" alt="">
+                    (+62) 123-321-543
+                </p>
+            </div>
+
+            <div class=" w-full md:w-6/12 flex justify-evenly items-center">
+                <div>
+                    <h1 class=" text-white font-semibold mb-4 text-xl">Company</h1>
+                    <p class=" text-gray-500 text-sm mb-3">About us</p>
+                    <p class=" text-gray-500 text-sm mb-3">Leadership</p>
+                    <p class=" text-gray-500 text-sm mb-3">Careers</p>
+                    <p class=" text-gray-500 text-sm mb-3">News & Articles</p>
+                    <p class=" text-gray-500 text-sm mb-3">Legal Notice</p>
+                </div>
+
+                <div>
+                    <h1 class=" text-white font-semibold text-xl mb-10">Support</h1>
+                    <p class=" text-gray-500 text-sm mb-3">Help Center</p>
+                    <p class=" text-gray-500 text-sm mb-3">FAQ</p>
+                    <p class=" text-gray-500 text-sm mb-3">Ticket Support</p>
+                    <p class=" text-gray-500 text-sm mb-3">Contact Us</p>
+                </div>
+            </div>
+
+            <div class=" w-full md:w-2/12 flex flex-col justify-between items-center md:items-start">
+                <div>
+                    <h1 class=" text-white font-semibold mb-4 text-xl">Services</h1>
+                    <p class=" text-gray-500 text-sm mb-3">Academy</p>
+                    <p class=" text-gray-500 text-sm mb-3">Group Lesson</p>
+                    <p class=" text-gray-500 text-sm mb-3">Private Lesson</p>
+                    <p class=" text-gray-500 text-sm mb-3">Hockeys for kids</p>
+                    <p class=" text-gray-500 text-sm mb-3">Hockeys for Adult</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end============================================================= -->
+
+
+
+
+</body>
+
+</html>
